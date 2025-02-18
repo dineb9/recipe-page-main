@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3e9dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.recipe-card {
+  background: white;
+  border-radius: 10px;
+  max-width: 1000px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 3em;
+}
+.recipe-image {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 100%;
+}
+.content {
+  padding: 20px;
+}
+h1 {
+  font-size: 45px;
+}
+h2 {
+  color: hsl(14, 45%, 36%);
+  font-size: xx-large;
+}
+
+.preparation {
+  background-color: #f8f1ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.preparation h3 {
+  color: hsl(332, 51%, 32%);
+}
+.preparation,
+.ingredients,
+.instructions,
+.nutrition {
+  margin-bottom: 20px;
+}
+ul,
+ol {
+  padding-left: 20px;
+}
+p,
+li {
+  color: hsl(30, 10%, 34%);
+}
+ol li::marker {
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+  font-size: 1.2em;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: hsl(14, 45%, 36%);
+}
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.nutrition table tr td strong {
+  color: hsl(14, 45%, 36%);
+}
+@media (max-width: 375px) {
+  .recipe-card {
+    max-width: 100%;
+    margin: 10px;
+  }
+  .content {
+    padding: 15px;
+  }
+}
